@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 3.2rem;
+	color: #e8b73b;
+}
+h2 {
+	font-size: 2.4rem;
+}
+h3 {
+	font-size: 1.6rem;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+.App {
+	height: 100vh;
+	background-color: rgba(183, 195, 225, 0.5);
+	transition: all 0.5s ease;
+}

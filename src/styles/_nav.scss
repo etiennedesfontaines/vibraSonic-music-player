@@ -1,0 +1,38 @@
+.nav {
+	position: relative;
+	background-color: #e0e4f1;
+	min-height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 1px 3px 0px rgba(102, 149, 58, 0.12),
+		0px 1px 1px 0px rgba(102, 149, 58, 0.14),
+		0px 2px 1px -1px rgba(102, 149, 58, 0.2);
+	z-index: 999;
+	button {
+		color: #66953a;
+		font-weight: 500;
+		display: flex;
+		gap: 0.8rem;
+		background: transparent;
+		border-radius: 0.8rem;
+		border: none;
+		padding: 0.8rem;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+			color: #52772f;
+		}
+		&:focus {
+			border: none;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.nav {
+		button {
+			z-index: 9999;
+		}
+	}
+}
