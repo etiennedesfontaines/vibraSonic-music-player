@@ -1,3 +1,4 @@
+import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import { v4 as uuidv4 } from "uuid";
 
 const musicData = () => {
@@ -10,7 +11,7 @@ const musicData = () => {
 			audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
-			active: false,
+			active: toBeRequired,
 		},
 		{
 			songName: "Fly High Newborn",
@@ -19,7 +20,7 @@ const musicData = () => {
 			audio: "https://mp3.chillhop.com/serve.php/?mp3=55317",
 			color: ["#D7CC9F", "#F2F1F0"],
 			id: uuidv4(),
-			active: true,
+			active: false,
 		},
 		{
 			songName: "See You Cross Country",
