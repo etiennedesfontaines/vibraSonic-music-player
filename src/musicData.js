@@ -13,6 +13,7 @@ const musicData = () => {
 			id: uuidv4(),
 			active: toBeRequired,
 		},
+
 		{
 			songName: "Fly High Newborn",
 			albumCover:"https://chillhop.com/wp-content/uploads/2023/04/a32d2ec47ba20c985c2b2425fd24d277a8f36d3e-1024x1024.jpg", //prettier-ignore

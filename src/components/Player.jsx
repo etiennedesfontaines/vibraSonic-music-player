@@ -37,8 +37,6 @@ const Player = ({
 		}
 	};
 	const songInfoHandler = (e) => {
-		//I'm uncertain why the spread operator is necessary?
-		//I've checked it and at the point of this query, removing it has no affect.
 		const current = e.target.currentTime;
 		const duration = e.target.duration;
 		//calculate percentage:
@@ -150,7 +148,7 @@ const Player = ({
 				onLoadedData={autoPlaySong}
 				onLoadedMetadata={songInfoHandler}
 				onTimeUpdate={songInfoHandler}
-				onEnded={() => skipTrackHandler()}
+				onEnded={() => skipTrackHandler("forward")}
 			></audio>
 		</div>
 	);
